@@ -15,13 +15,13 @@ class UsersRolesControllerTest extends ControllerTestCase {
 	public $fixtures = array(
 		'app.users_role',
 		'app.user',
+		'app.profile',
 		'app.post',
 		'app.category',
 		'app.page',
 		'app.comment',
 		'app.reader',
-		'app.readers_profile',
-		'app.profile',
+		'app.readers_information',
 		'app.tag',
 		'app.posts_tag'
 	);

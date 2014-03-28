@@ -3,9 +3,9 @@ App::uses('AppModel', 'Model');
 /**
  * User Model
  *
- * @property UsersRole $UsersRole
- * @property Profile $Profile
+ * @property Role $Role
  * @property Post $Post
+ * @property Profile $Profile
  */
 class User extends AppModel {
 
@@ -35,17 +35,7 @@ class User extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'users_role_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'profile_id' => array(
+		'role_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -65,16 +55,9 @@ class User extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'UsersRole' => array(
-			'className' => 'UsersRole',
-			'foreignKey' => 'users_role_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'Profile' => array(
-			'className' => 'Profile',
-			'foreignKey' => 'profile_id',
+		'Role' => array(
+			'className' => 'Role',
+			'foreignKey' => 'role_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -89,6 +72,19 @@ class User extends AppModel {
 	public $hasMany = array(
 		'Post' => array(
 			'className' => 'Post',
+			'foreignKey' => 'user_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Profile' => array(
+			'className' => 'Profile',
 			'foreignKey' => 'user_id',
 			'dependent' => false,
 			'conditions' => '',

@@ -30,8 +30,8 @@ class UsersRoleFixture extends CakeTestFixture {
 		array(
 			'id' => 1,
 			'name' => 'Lorem ipsum dolor sit amet',
-			'created' => '2014-03-24 00:33:46',
-			'modified' => '2014-03-24 00:33:46'
+			'created' => '2014-03-26 04:50:10',
+			'modified' => '2014-03-26 04:50:10'
 		),
 	);
 

@@ -18,8 +18,6 @@ class ReadersInformationTest extends CakeTestCase {
 		'app.comment',
 		'app.post',
 		'app.user',
-		'app.users_role',
-		'app.profile',
 		'app.category',
 		'app.page',
 		'app.tag',

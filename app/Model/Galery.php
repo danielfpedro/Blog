@@ -1,11 +1,11 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * ReadersProfile Model
+ * Galery Model
  *
- * @property Reader $Reader
+ * @property Image $Image
  */
-class ReadersProfile extends AppModel {
+class Galery extends AppModel {
 
 /**
  * Validation rules
@@ -28,10 +28,24 @@ class ReadersProfile extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
- * hasMany associations
+ * hasAndBelongsToMany associations
  *
  * @var array
  */
-	public $hasOne = array('Reader');
+	public $hasAndBelongsToMany = array(
+		'Image' => array(
+			'className' => 'Image',
+			'joinTable' => 'galeries_images',
+			'foreignKey' => 'galery_id',
+			'associationForeignKey' => 'image_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		)
+	);
 
 }

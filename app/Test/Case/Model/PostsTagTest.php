@@ -16,13 +16,10 @@ class PostsTagTest extends CakeTestCase {
 		'app.posts_tag',
 		'app.post',
 		'app.user',
-		'app.users_role',
-		'app.profile',
 		'app.category',
 		'app.page',
 		'app.comment',
 		'app.reader',
-		'app.readers_information',
 		'app.tag'
 	);
 

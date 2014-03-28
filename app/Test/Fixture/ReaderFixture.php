@@ -36,8 +36,8 @@ class ReaderFixture extends CakeTestFixture {
 			'name' => 'Lorem ipsum dolor sit amet',
 			'email' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
-			'created' => '2014-03-24 00:33:45',
-			'modified' => '2014-03-24 00:33:45',
+			'created' => '2014-03-26 05:02:16',
+			'modified' => '2014-03-26 05:02:16',
 			'readers_information_id' => 1
 		),
 	);

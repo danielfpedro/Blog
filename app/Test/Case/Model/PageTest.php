@@ -14,16 +14,7 @@ class PageTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.page',
-		'app.post',
-		'app.user',
-		'app.users_role',
-		'app.profile',
-		'app.category',
-		'app.comment',
-		'app.reader',
-		'app.readers_information',
-		'app.tag',
-		'app.posts_tag'
+		'app.post'
 	);
 
 /**

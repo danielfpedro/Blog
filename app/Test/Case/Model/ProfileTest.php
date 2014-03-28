@@ -14,16 +14,7 @@ class ProfileTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.profile',
-		'app.user',
-		'app.users_role',
-		'app.post',
-		'app.category',
-		'app.page',
-		'app.comment',
-		'app.reader',
-		'app.readers_information',
-		'app.tag',
-		'app.posts_tag'
+		'app.user'
 	);
 
 /**

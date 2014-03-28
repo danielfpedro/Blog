@@ -1,11 +1,11 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * UsersRole Model
+ * Role Model
  *
  * @property User $User
  */
-class UsersRole extends AppModel {
+class Role extends AppModel {
 
 /**
  * Validation rules
@@ -35,7 +35,7 @@ class UsersRole extends AppModel {
 	public $hasMany = array(
 		'User' => array(
 			'className' => 'User',
-			'foreignKey' => 'users_role_id',
+			'foreignKey' => 'role_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',

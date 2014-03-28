@@ -15,6 +15,7 @@ class UsersRoleTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.users_role',
 		'app.user',
+		'app.profile',
 		'app.post',
 		'app.category',
 		'app.page',
@@ -22,8 +23,7 @@ class UsersRoleTest extends CakeTestCase {
 		'app.reader',
 		'app.readers_information',
 		'app.tag',
-		'app.posts_tag',
-		'app.profile'
+		'app.posts_tag'
 	);
 
 /**
